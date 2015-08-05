@@ -1,0 +1,128 @@
+{ "sections":[
+  {
+    "section-name":"Profile",
+    "content":[
+      "Software engineer with a design background and enterprise software experience",
+      "<ul><li>Proficient with rapid prototyping and multiple programming languages</li><li>Perform diverse job functions across multiple skill sets and communicate effectively with developers and designers</li></ul>"
+    ]
+  }, {
+    "section-name":"Experience",
+    "content":[
+      {
+        "company":"CA Technologies",
+        "company-loc":"Austin, TX",
+        "job-title":"Software Engineer",
+        "dates": "April 2014 - July 2015",
+        "bullets":[
+          "Internal technical lead on project to create package of development tools to support corporate design language, including customized Twitter Bootstrap and Appcelerator themes",
+          "Managed implementation of development tools by product teams by providing technical support, demos, and code walkthroughs, resulting in 4 product teams adopting development tools package since February",
+          "Refactored and maintained extensive documentation for internal Bootstrap theme, resulting in faster development time and reduced need for design resources when adopted by product teams",
+          "Added 6 new components to internal Bootstrap theme over 3 months, including range slider, file upload, sortable table columns, and editable table cells",
+          "With Central UX team, implemented Appcelerator prototype for new mobile version of CA Cloud Service Delivery Platform which was demoed to customers at CA World, the annual customer conference",
+          "Built new user interface for CA Normalized Infrastructure Management using Bootstrap theme and successfully handed code off to product team",
+          "Created Axure library to support both mobile and desktop corporate design language, resulting in faster and easier prototyping when adopted by 2 product teams since February",
+          "Created design patterns, interaction patterns, specs, and documentation for iOS version of corporate design language",
+          "Subject matter expert for technical questions surrounding corporate design language"
+        ]
+      }, {
+        "company": "CA Technologies",
+        "company-loc": "Austin, TX",
+        "job-title": "Associate Software Engineer",
+        "dates": "June 2012 - April 2014",
+        "bullets": [
+          "Created SASS theme and library of functions for CA’s SaaS Platform, including an automatic spriting system and live ‘theme-roller’",
+          "Implemented components for CA’s SaaS Platform with ExtJS and SASS, including cross-browser testing back to IE8 and writing unit tests and API docs",
+          "Provided visual and interaction design for components for corporate design language in form of specs and documentation",
+          "Refactored internal browser-based library of clickable examples of components available on CA's SaaS Platform, resulting in increased uptime, improved error handling, and easier maintenance",
+          "Subject matter expert for SASS and CSS questions"
+        ]
+      }, {
+        "company": "White Flag Projects",
+        "company-loc": "St. Louis, MO",
+        "job-title": "Communications Coordinator Intern",
+        "dates": "January 2012 - June 2012",
+        "bullets": [
+          "Created interactive digital publications using iBooks Author and packaged them for download",
+          "Created training documents to enable future interns to continue creating digital publications",
+          "Wrote blog posts centered around featured artists to promote exhibits"
+        ]
+      }, {
+        "company": "Commerical Letter, Inc.",
+        "company-loc": "St. Louis, MO",
+        "job-title": "Creative Intern",
+        "dates": "May 2011 - August 2011",
+        "bullets": [
+          "Designed variety of seasonal mailer templates",
+          "Worked with Customer Service Representatives and clients to design postcards, letters, and other print media",
+          "Prepared projects for print on litho and laser printers"
+        ]
+      }, {
+        "company": "Washington University Political Review",
+        "company-loc": "St. Louis, MO",
+        "job-title": "Director of Design, Illustrator",
+        "dates": "September 2010 - June 2012",
+        "bullets": [
+          "Updated and revised magazine style guide",
+          "Mentored younger students in design",
+          "Created illustrations and layouts for several recurring features",
+          "Lead illustrator for portraits"
+        ]
+      }, {
+        "company": "Monmouth County Arts Council",
+        "company-loc": "Red Bank, NJ",
+        "job-title": "Intern",
+        "dates": "June 2009 - August 2009",
+        "bullets": [
+          "Created banner ads for local artists and art organizations",
+          "Compiled relevant resources and information and made them available on organization website",
+          "Maintained website using CMS"
+        ]
+      }
+    ]
+  }, {
+    "section-name": "Education",
+    "content":[
+      "<span class='bold'>Washington University in St. Louis</span>",
+      "<span class='bold'>Sam Fox School of Design & Visual Arts</span>",
+      "BFA Communication Design, Spring 2012",
+      "Minor: Computer Science"
+    ]
+  },
+  {
+    "section-name":"Honors",
+    "content":[
+      "<span class='bold'>Margaret Blanke and Hamblett C. Grigg Memorial Scholarship Scholar</span> 2010 - 2012",
+      "<span class='bold'>Dean’s List</span> Spring 2010, Spring 2009",
+      "<span class='bold'>Recipient, United Methodist General Scholarship</span> 2008"
+    ]
+  }
+],
+"skills":{
+  "section-name": "Skills",
+  "content":[
+    {
+      "sub-section": "Programming",
+      "skills":[
+        "SASS",
+        "Compass",
+        "CSS",
+        "HTML",
+        "Twitter Bootstrap",
+        "Jekyll",
+        "Javascript",
+        "ExtJS",
+        "KnockoutJS",
+        "jQuery"
+      ]
+    }, {
+      "sub-section": "Design",
+      "skills":[
+        "Axure RP",
+        "Adobe Photoshop",
+        "Adobe Fireworks",
+        "Adobe Illustrator"
+      ]
+    }
+  ]
+}
+}

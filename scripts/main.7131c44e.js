@@ -1,0 +1,1 @@
+$.getJSON("../resume.json",function(a){var b=a;console.log(b);var c=$("#job-template").html(),d=Handlebars.compile(c),e=d(b);$(".resume-ct").html(e),console.log(b.skills),c=$("#skills-template").html(),d=Handlebars.compile(c),e=d(b.skills),$(".skills-ct").html(e)}),Handlebars.registerHelper("id",function(a){var b=a.replace(/\s/g,"-");return b=b.replace(",","")});

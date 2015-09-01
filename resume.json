@@ -102,7 +102,7 @@
   "content":[
     {
       "sub-section": "Programming",
-      "skills":[
+      "bullets":[
         "SASS",
         "Compass",
         "CSS",
@@ -116,7 +116,7 @@
       ]
     }, {
       "sub-section": "Design",
-      "skills":[
+      "bullets":[
         "Axure RP",
         "Adobe Photoshop",
         "Adobe Fireworks",

@@ -9,6 +9,19 @@
     "section-name":"Experience",
     "content":[
       {
+        "company":"Spiceworks",
+        "company-loc":"Austin, TX",
+        "job-title":"UI Developer",
+        "dates": "September 2015 - present",
+        "bullets":[
+          "Liase with design team on implementation of new and/or updated UIs",
+          "Became subject matter expert on internal UI toolkit",
+          "Coordinated releases with product teams to launch rebranding on-time",
+          "Upgraded orphaned legacy apps and quickly turned around bugfixes for site-wide design refresh",
+          "Automated icon generation to save design and dev time and support multiple resolutions",
+          "With team, created internal framework for A/B testing, resulting a better user experience and monetary savings"
+        ]
+      }, {
         "company":"CA Technologies",
         "company-loc":"Austin, TX",
         "job-title":"Software Engineer",

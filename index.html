@@ -1,47 +1,188 @@
-<!DOCTYPE html> <html class=no-js> <head> <meta charset=utf-8> <title>Stephanie Trimboli</title> <meta name=description content=""> <meta name=viewport content="width=device-width,initial-scale=1"> <link rel=icon type=image/png href=/favicon.png> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel=stylesheet href=styles/main.ecd8f7ef.css> <script src=scripts/vendor/modernizr.52238c52.js></script> <script id=job-template type=text/x-handlebars-template>{{#each sections}}
-        <div class='section-header'>
-          {{section-name}}
-        </div>
-        {{#each content}}
-          {{#if job-title}}
-            <div data-toggle='collapse' class='job-wrapper collapsed' href='#job-{{#id job-title}}{{/id}}'>
-              <div>
-                <span class='bold'>{{company}}</span> <br class='visible-xs' /> {{company-loc}}
-              </div>
-              <div>
-                <span class='job-title'>{{job-title}}</span> <br class='visible-xs' /> {{dates}} <span class='triangle'></span>
-              </div>
-            </div>
-            <ul class='collapse' id='job-{{#id job-title}}{{/id}}'>
-              {{#each bullets}}
-                <li> {{this}} </li>
-              {{/each}}
-            </ul>
-          {{else}}
-            <div>{{{this}}}</div>
-          {{/if}}
-        {{/each}}
-      {{/each}}
-      {{#with skills}}
-        <div class='section-header visible-xs'>
-          {{log section-name}}
-          {{section-name}}
-        </div>
-        {{#each content}}
-          <div class='bold collapsed visible-xs' data-toggle='collapse' href='#{{sub-section}}-skills-xs'>{{sub-section}} <span class='triangle'></span></div>
-          <ul class='collapse' id='{{sub-section}}-skills-xs'>
-            {{#each bullets}}
-              <li>{{this}}</li>
-            {{/each}}
-          </ul>
-        {{/each}}
-      {{/with}}</script> <script id=skills-template type=text/x-handlebars-template>{{#each content}}
-        <div class='section-header collapsed' data-toggle='collapse' href='#{{sub-section}}-skills'>{{sub-section}} <span class='triangle'></span></div>
-        <ul class='collapse' id='{{sub-section}}-skills'>
-          {{#each bullets}}
-            <li>{{this}}</li>
-          {{/each}}
+<!DOCTYPE html> 
+<html class=no-js> 
+  <head> 
+    <meta charset=utf-8> 
+    <meta name=description content=""> 
+    <meta name=viewport content="width=device-width,initial-scale=1"> 
+
+    <title>Stephanie Trimboli</title> 
+    
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel=icon type=image/png href=/favicon.png> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> 
+    <link rel=stylesheet href=styles/main.css> 
+    <script src=scripts/main.js></script> 
+  </head>
+  <body> 
+    <div class="resume">
+      <section class="resume_section">
+        <h1>Stephanie Trimboli</h1>
+      </section>
+
+      <section class="resume_section">
+        <h3 class="resume_section-title">Profile</h3>
+        <ul class="resume_section-content">
+          Software engineer with a design background and enterprise software experience.
+          
+          <li class="resume_item">
+            Proficient with rapid prototyping and multiple programming languages
+          </li>
+
+          <li class="resume_item">
+            Perform diverse job functions across multiple skill sets and communicate effectively with developers and designers
+          </li>
         </ul>
-      {{/each}}</script>  <body> <!-- <span class="visible-xs">SIZE XS</span><span class="visible-sm">SIZE SM</span><span class="visible-md">SIZE MD</span><span class="visible-lg">SIZE LG</span> --> <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--> <div class=container> <div class=row> <div class="col-sm-3 col-md-3 col-lg-2 col-md-offset-1 col-sm-offset-1"> <div class=left-col-wrapper> <a class=name href=mailto:satrimboli@gmail.com>Stephanie Trimboli</a> <hr class="visible-xs"> <div class="skills-ct hidden-xs"></div> </div> </div> <div class="col-sm-8 col-sm-offset-4 col-md-8 col-md-offset-4 col-lg-offset-3 content-area"> <div class=resume-ct></div> </div> </div> </div> <!-- <footer class='bs-docs-footer'><p>Copyright &copy; 2015 Stephanie Trimboli</p></footer> --> <script src=scripts/vendor.a43a9f59.js></script> <script src=scripts/main.759c6900.js></script>  
+      </section>
+
+      <section class="resume_section">
+        <h3 class="resume_section-title">Experience</h3>
+        <ul class="resume_section-content">
+          <li class="resume_item--job">
+            <div class="resume_item-header">
+              <span class="resume_item-title">Spiceworks</span> Austin, TX
+              <span class="resume_item-subtitle">UI Developer</span> September 2015 - present
+            </div>
+            <ul class="resume_item-content">
+              <li class="resume_item">Liase with design team on implementation of new and/or updated UIs</li>
+              <li class="resume_item">Became subject matter expert on internal UI toolkit</li>
+              <li class="resume_item">Coordinated releases with product teams to launch rebranding on-time</li>
+              <li class="resume_item">Upgraded orphaned legacy apps and quickly turned around bugfixes for site-wide design refresh</li>
+              <li class="resume_item">Automated icon generation to save design and dev time and support multiple resolutions</li>
+              <li class="resume_item">With team, created internal framework for A/B testing, resulting a better user experience and monetary savings"</li>
+            </ul>
+          </li>
+          <li class="resume_item--job">
+            <span class="resume_item-header">
+              <span class="resume_item-title">CA Technologies</span> Austin, TX
+              <span class="resume_item-subtitle">Software Engineer</span> April 2014 - July 2015
+            </span>
+            <ul class="resume_item-content">
+              <li class="resume_item">Internal technical lead on project to create package of development tools to support corporate design language, including customized Twitter Bootstrap and Appcelerator themes</li>
+              <li class="resume_item">Managed implementation of development tools by product teams by providing technical support, demos, and code walkthroughs, resulting in 4 product teams adopting development tools package since February</li>
+              <li class="resume_item">Refactored and maintained extensive documentation for internal Bootstrap theme, resulting in faster development time and reduced need for design resources when adopted by product teams</li>
+              <li class="resume_item">Added 6 new components to internal Bootstrap theme over 3 months, including range slider, file upload, sortable table columns, and editable table cells</li>
+              <li class="resume_item">With Central UX team, implemented Appcelerator prototype for new mobile version of CA Cloud Service Delivery Platform which was demoed to customers at CA World, the annual customer conference</li>
+              <li class="resume_item">Built new user interface for CA Normalized Infrastructure Management using Bootstrap theme and successfully handed code off to product team</li>
+              <li class="resume_item">Created Axure library to support both mobile and desktop corporate design language, resulting in faster and easier prototyping when adopted by 2 product teams since February</li>
+              <li class="resume_item">Created design patterns, interaction patterns, specs, and documentation for iOS version of corporate design language</li>
+              <li class="resume_item">Subject matter expert for technical questions surrounding corporate design language"</li>
+            </ul>
+          </li>
+          <li class="resume_item--job">
+            <span class="resume_item--header">
+              <span class="resume_item-title">CA Technologies</span> Austin, TX
+              <span class="resume_item-subtitle">Associate Software Engineer</span>"April 2014 - July 2015
+            </span>
+            <ul class="resume_item-content">
+              <li class="resume_item">Created SASS theme and library of functions for CA’s SaaS Platform, including an automatic spriting system and live ‘theme-roller’</li>
+              <li class="resume_item">Implemented components for CA’s SaaS Platform with ExtJS and SASS, including cross-browser testing back to IE8 and writing unit tests and API docs</li>
+              <li class="resume_item">Provided visual and interaction design for components for corporate design language in form of specs and documentation</li>
+              <li class="resume_item">Refactored internal browser-based library of clickable examples of components available on CA's SaaS Platform, resulting in increased uptime, improved error handling, and easier maintenance</li>
+              <li class="resume_item">Subject matter expert for SASS and CSS questions"</li>
+            </ul>
+          </li>
+          <li class="resume_item--job">
+            <span class="resume_item-header">
+              <span class="resume_item-title">White Flag Projects</span> St. Louis, MO
+              <span class="resume_item-subtitle">Communications Coordinator Intern</span> January 2012 - June 2012
+            </span>
+            <ul class="resume_item-content">
+              <li class="resume_item">Created interactive digital publications using iBooks Author and packaged them for download</li>
+              <li class="resume_item">Created training documents to enable future interns to continue creating digital publications</li>
+              <li class="resume_item">Wrote blog posts centered around featured artists to promote exhibits"</li>
+            </ul>
+          </li>
+          <li class="resume_item--job">
+            <span class="resume_item-header">
+              <span class="resume_item-title">Commercial Letter, Inc</span> St. Louis, MO
+              <span class="resume_item-subtitle"></span>
+            </span>
+            <ul class="resume_item-content">
+              <li class="resume_item">Designed variety of seasonal mailer templates</li>
+              <li class="resume_item">Worked with Customer Service Representatives and clients to design postcards, letters, and other print media</li>
+              <li class="resume_item">Prepared projects for print on litho and laser printers</li>
+            </ul>
+          </li>
+          <li class="resume_item--job">
+            <span class="resume_item-header">
+              <span class="resume_item-title">Washington University Political Review</span> St. Louis, MO
+              <span class="resume_item-subtitle">Director of Design, Illustrator</span> September 2010 - June 2012
+            </span>
+            <ul class="resume_item-content">
+              <li class="resume_item">Updated and revised magazine style guide</li>
+              <li class="resume_item">Mentored younger students in design</li>
+              <li class="resume_item">Created illustrations and layouts for several recurring features</li>
+              <li class="resume_item">Lead illustrator for portraits</li>
+            </ul>
+          </li>
+          <li class="resume_item--job">
+            <span class="resume_item-header">
+              <span class="resume_item-title">Monmouth County Arts Council</span> Red Bank, NJ
+              <span class="resume_item-subtitle">Intern</span> June 2009 - August 2009
+            </span>
+            <ul class="resume_item-content">
+              <li class="resume_item">Created banner ads for local artists and art organizations</li>
+              <li class="resume_item">Compiled relevant resources and information and made them available on organization website</li>
+              <li class="resume_item">Maintained website using CMS</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="resume_section">
+        <h3 class="resume_section-title">Education</h3>
+        <ul class="resume_section-content">
+          <li><span class='bold'>Washington University in St. Louis</span></li>
+          <li class="resume_item"><span class='bold'>Sam Fox School of Design & Visual Arts</span></li>
+          <li class="resume_item">BFA Communication Design, Spring 2012</li>
+          <li class="resume_item">Minor: Computer Science</li>
+        </ul>
+      </section>
+
+      <section class="resume_section">
+        <h3 class="resume_section-title">Honors</h3>
+        <ul class="resume_section-content">
+          <li class="resume_item"><span class='bold'>Margaret Blanke and Hamblett C. Grigg Memorial Scholarship Scholar</span> 2010 - 2012</li>
+          <li class="resume_item"><span class='bold'>Dean’s List</span> Spring 2010, Spring 2009</li>
+          <li class="resume_item"><span class='bold'>Recipient, United Methodist General Scholarship</span> 2008</li>
+        </ul>
+      </section>
+
+      <section class="resume_section">
+        <h3 class="resume_section-title">Skills</h3>
+        <ul class="resume_section-content">
+          <li class="resume_item">
+            <span class="resume_item-title">Programming</span>
+            <ul class="resume_item-content">
+              <li class="resume_item">SASS</li>
+              <li class="resume_item">Compass</li>
+              <li class="resume_item">CSS</li>
+              <li class="resume_item">HTML</li>
+              <li class="resume_item">Twitter Bootstrap</li>
+              <li class="resume_item">Jekyll</li>
+              <li class="resume_item">Javascript</li>
+              <li class="resume_item">ExtJS</li>
+              <li class="resume_item">KnockoutJS</li>
+              <li class="resume_item">jQuery</li>
+              <li class="resume_item">Ember</li>
+              <li class="resume_item">Vue</li>
+              <li class="resume_item">Ruby on Rails</li>
+            </ul>
+          </li>
+          <li class="resume_item">
+            <span class="resume_item-title">Design</span>
+            <ul class="resume_item-content">
+              <li class="resume_item">Sketch</li>
+              <li class="resume_item">Axure RP</li>
+              <li class="resume_item">Adobe Photoshop</li>
+              <li class="resume_item">Adobe Fireworks</li>
+              <li class="resume_item">Adobe Illustrator</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body> 
+</html> 
